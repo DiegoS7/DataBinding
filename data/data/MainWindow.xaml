@@ -8,9 +8,13 @@
         Title="Ejercicios XAML" Height="450" Width="800">
     <Grid>
         <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="154" Margin="10,10,0,0" Name="txtmensaje">
-
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.33" ScaleY="4"/>
+                    <RotateTransform Angle="-10"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
         </TextBox>
-            <Button Name="boton" Content="{Binding ElementName=txtmensaje, Path=Text}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="179,21,0,0" Height="38"/>
 
     </Grid>
 </Window>
