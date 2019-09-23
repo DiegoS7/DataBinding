@@ -7,14 +7,13 @@
         mc:Ignorable="d"
         Title="Ejercicios XAML" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="154" Margin="10,10,0,0" Name="txtmensaje">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1.33" ScaleY="4"/>
-                    <RotateTransform Angle="-10"/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
+        <InkCanvas HorizontalAlignment="Left" Height="370" Margin="10,10,0,0" VerticalAlignment="Top" Width="760" Name="lienzo">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="DarkRed" Width="5" Height="20" FitToCurve="True" IsHighlighter="False"/>
+            </InkCanvas.DefaultDrawingAttributes>
+            <Label Content="Ella me ama, entiendo"/>
+        </InkCanvas>
+        <Button Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,385,0,0" Click="Button_Click"/>
 
     </Grid>
 </Window>

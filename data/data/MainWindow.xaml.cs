@@ -24,5 +24,10 @@ namespace data
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.lienzo.Strokes.Clear(); //limpiar lienzo
+        }
     }
 }
